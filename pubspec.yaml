@@ -1,0 +1,32 @@
+name: project
+description: Liquid Galaxy Controller for GSoC Task 2
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Required for SSH connection to the rig
+  dartssh2: ^2.10.0
+  logger: ^2.0.0
+  shared_preferences: ^2.2.2
+  # Default icons
+  cupertino_icons: ^1.0.6
+  google_maps_flutter: ^2.14.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  # register the folders you created so the app can see the files
+  assets:
+    - assets/images/
+    - assets/kmls/
