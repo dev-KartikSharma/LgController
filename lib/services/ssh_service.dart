@@ -70,8 +70,8 @@ class SSHService {
     int leftRig = getLeftScreen();
     String openLogoKML = KMLCommands.screenOverlayImage(
       "http://lg1/lg_logo.png",
-      x: 0.25,
-      y: 0.95,
+      x: 0.38,
+      y: 1,
     );
 
     try {
