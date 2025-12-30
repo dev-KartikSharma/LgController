@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
 <Document>
-	<name>Eiffel Tower.kml</name>
+	<name>EiffelTower.kml</name>
 	<StyleMap id="m_ylw-pushpin">
 		<Pair>
 			<key>normal</key>
@@ -45,12 +45,12 @@
 	<Placemark>
 		<name>Eiffel Tower</name>
 		<LookAt>
-			<longitude>2.294213064869028</longitude>
-			<latitude>48.85827672456752</latitude>
+			<longitude>2.293955093236453</longitude>
+			<latitude>48.85978538020763</latitude>
 			<altitude>0</altitude>
-			<heading>-6.34509328225919e-10</heading>
-			<tilt>44.99999996802982</tilt>
-			<range>1000.000028525615</range>
+			<heading>-0.0001942433534999976</heading>
+			<tilt>44.99994618500824</tilt>
+			<range>991.5382378089364</range>
 			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 		</LookAt>
 		<styleUrl>#m_ylw-pushpin</styleUrl>

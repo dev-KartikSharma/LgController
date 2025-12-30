@@ -95,13 +95,12 @@ class _HomePageState extends State<HomePage> {
 
         title: Row(
           children: [
-            // Use dynamic colors for text/icons
             Icon(Icons.public, color: Theme.of(context).brightness == Brightness.dark ? Colors.orange : Colors.blue, size: 28),
             const SizedBox(width: 10),
             Text(
               "LG Controller",
               style: TextStyle(
-                // Auto-switches between Black and White text
+                // Auto switch between Black and White text
                   color: Theme.of(context).textTheme.bodyLarge?.color,
                   fontWeight: FontWeight.bold,
                   fontSize: 18
@@ -152,6 +151,7 @@ class _HomePageState extends State<HomePage> {
               mapType: MapType.normal,
               initialCameraPosition: _initialPosition,
               zoomControlsEnabled: true,
+              minMaxZoomPreference: const MinMaxZoomPreference(0, 16),
               onMapCreated: (controller) => _mapController.complete(controller),
               onCameraMove: _onCameraMove,
               onCameraIdle: _onCameraIdle,
@@ -174,9 +174,9 @@ class _HomePageState extends State<HomePage> {
                     ),
                     const SizedBox(height: 12),
                     _buildDarkButton(
-                      label: "Fly to India Gate 🇮🇳",
+                      label: "Fly to India Gate",
                       onTap: () async {
-                        await _sshService.sendKML("India_gate.kml");
+                        await _sshService.sendKML("india_gate.kml");
                         final c = await _mapController.future;
                         c.animateCamera(CameraUpdate.newCameraPosition(
                             const CameraPosition(
@@ -187,7 +187,7 @@ class _HomePageState extends State<HomePage> {
                     ),
                     const SizedBox(height: 12),
                     _buildDarkButton(
-                      label: "Fly to Eiffel Tower 🇫🇷",
+                      label: "Fly to Eiffel Tower",
                       onTap: () async {
                         await _sshService.sendKML("EiffelTower.kml");
                         final c = await _mapController.future;

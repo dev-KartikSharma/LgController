@@ -26,7 +26,9 @@ class KMLCommands {
   }
   static String lookAtLinear(double latitude, double longitude, double zoom, double tilt, double bearing) {
     double range = 59165755.0 / pow(2, zoom);
-
+    if (range < 1500) {
+      range = 1500;
+    }
     return '<LookAt>'
         '<longitude>$longitude</longitude>'
         '<latitude>$latitude</latitude>'
