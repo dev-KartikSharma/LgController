@@ -31,7 +31,7 @@ class _MyAppState extends State<MyApp> {
       // 2. Define Both Themes
       themeMode: _themeMode,
 
-      // DARK THEME (Your current look)
+      // DARK THEME
       darkTheme: ThemeData(
         brightness: Brightness.dark,
         scaffoldBackgroundColor: Colors.black,
@@ -43,7 +43,7 @@ class _MyAppState extends State<MyApp> {
         useMaterial3: true,
       ),
 
-      // LIGHT THEME (New!)
+      // LIGHT THEME
       theme: ThemeData(
         brightness: Brightness.light,
         scaffoldBackgroundColor: Colors.white,
